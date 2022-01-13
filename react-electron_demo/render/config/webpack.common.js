@@ -1,13 +1,13 @@
 const webpack = require("webpack")
 const path = require("path")
-
 module.exports = {
     entry: "./render/index",
     output: {
-        publicPath: './',
+        publicPath: './', // when building ,it need to change to './'
         filename: "[name].js",
         path: path.join(__dirname, "../dist-render"),
     },
+
     target: "electron-renderer",
     resolve: {
         extensions: [".ts", ".tsx", ".js", ".jsx", ".json"],

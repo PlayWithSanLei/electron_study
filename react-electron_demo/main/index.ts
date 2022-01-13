@@ -11,7 +11,6 @@ function createWindow() {
             nodeIntegration: true
         }
     })
-
     if(isDev) {
         try {
             require('electron-reloader')(module, {})

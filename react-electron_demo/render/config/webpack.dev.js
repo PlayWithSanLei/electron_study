@@ -4,7 +4,6 @@ const common = require("./webpack.common")
 const path = require("path")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const mode = "development"
-
 module.exports = merge(common, {
     mode: "development",
     devtool: "inline-source-map",
